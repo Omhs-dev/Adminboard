@@ -1,0 +1,59 @@
+			<textarea name="editor1"></textarea>
+              <script>
+                    CKEDITOR.replace( 'editor1' );
+              </script>
+
+
+
+
+<form action="post">
+	<div class="form-group">
+		<label for="title">Title</label>
+		<input type="name" class="form-control" id="Title">
+	</div>
+	<div class="form-group">
+		<label for="category">Category</label>
+		<select multiple class="form-control" name="category" id="category">
+			<option>Web Development</option>
+			<option>Tech Gadgets</option>
+			<option>Business</option>
+			<option>Health & Wellness</option>
+		</select>
+	</div>
+</form>
+
+
+
+
+<div class="modal fade" id="modalone" tabindex="-1" role="dialog" aria-labelledby="motoraf" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="motoraf">Ajouter une Categorie</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="name" class="col-form-label">Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="mail" class="col-form-label">Email</label>
+            <input type="email" name="mail" id="mail">
+          </div>
+          <div class="form-group">
+            <label for="pass" class="col-form-label">Password</label>
+            <input type="password" name="mail" id="pass">
+          </div>
+          <div class="form-group">
+            <label for="passw" class="col-form-label">Confirm Password</label>
+            <input type="password" name="mail" id="passw">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
