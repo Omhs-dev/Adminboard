@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Adminboard</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../fontawesome-free-5.12.1-web/css/all.css">
+	<script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
+</head>
+
+<body>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+			<a class="navbar-brand pl-5 ml-5" href="#">Adminboard</a>
+
+			<button class="navbar-toggler" data-target="#navtarget" data-toggle="collapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navtarget">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a href="#" class="nav-link">Dashboard</a>
+					</li>
+				
+					<li class="nav-item">
+						<a href="#" class="nav-link">Posts</a>
+					</li>
+				
+					<li class="nav-item">
+						<a href="#" class="nav-link">Categories</a>
+					</li>
+				
+					<li class="nav-item">
+						<a href="#" class="nav-link">Utilisateurs</a>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav ml-auto pr-5">
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" id="dropdrownmenu" data-toggle="dropdown"><i class="fas fa-user"></i>Bienvenue Omar</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#"><i class="fas fa-user-circle"></i>Profile</a>
+				    		<a class="dropdown-item" href="#"><i class="fas fa-cog"></i>Parametres</a>
+						</div>
+					</li>
+				
+					<li class="nav-item">
+						<a href="#" class="nav-link"><i class="fas fa-user-times pr-1"></i>Logout</a>
+					</li>
+				</ul>
+
+			</div>
+
+		</nav>
+
+
+		<div class="pt-5 important mt-2 bg-primary p-2">
+			<div class="container">
+				<h1 class="warn text-white"><i class="fas fa-pencil-alt pr-2"></i>Posts</h1>
+			</div>
+		</div>
+
+		<div class=" bg-light p-3">
+			<div class="container p-2">
+				<div>
+					<div class="input-group mb-3 w-50 ml-auto">
+					  <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+					  <div class="input-group-append">
+					    	<button type="button" class="btn btn-primary bg-primary input-group-text text-white" id="basic-addon2">
+					    		Search
+					    	</button>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+				<div class="container pt-4">
+					<table class="table table-striped border">
+						
+						<h3 class="border p-2" style="background-color: #F2F2F2;">Les postes recents</h3>
+					 
+					    <tr class="thead-dark">
+					      <th scope="col">#</th>
+					      <th scope="col">Titre</th>
+					      <th scope="col">Categorie</th>
+					      <th scope="col">Date du post</th>
+					      <th scope="col"></th>
+					    </tr>
+
+					  <tbody>
+					    <tr>
+					      <th scope="row">1</th>
+					      <td>Poste One</td>
+					      <td>Web Development</td>
+					      <td>Octobre 12, 2019</td>
+					      <td><button type="button" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i><a href="details/index.html" class="room">Details</a></button></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">2</th>
+					      <td>Poste Two</td>
+					      <td>Tech Gadgets</td>
+					      <td>Octobre 13, 2019</td>
+					      <td><button type="button" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>Details</button></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">3</th>
+					      <td>Poste Three</td>
+					      <td>Web Development</td>
+					      <td>Octobre 14, 2019</td>
+					      <td><button type="button" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>Details</button></td>
+					    </tr>
+
+					    <tr>
+					      <th scope="row">4</th>
+					      <td>Poste Four</td>
+					      <td>Business</td>
+					      <td>Octobre 14, 2019</td>
+					      <td><button type="button" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>Details</button></td>
+					    </tr>
+
+					    <tr>
+					      <th scope="row">5</th>
+					      <td>Post Five</td>
+					      <td>Web Development</td>
+					      <td>Octobre 15, 2019</td>
+					      <td><button type="button" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>Details</button></td>
+					    </tr>
+
+					    <tr>
+					      <th scope="row">6</th>
+					      <td>Post Six</td>
+					      <td>Health & Wellness</td>
+					      <td>Octobre 16, 2019</td>
+					      <td><button type="button" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>Details</button></td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+
+		<footer class="bg-dark p-4">
+			<div class="text-center text-white">
+				<p>copyright &copy 2020 Adminboard</p>
+			</div>
+		</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	color: white;
+}
+
+.room:hover{
+	color: inherit;
+	text-transform: inherit;
+}
