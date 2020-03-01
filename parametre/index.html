@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Adminboard</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
 	<link rel="stylesheet" href="../fontawesome-free-5.12.1-web/css/all.css">
 	<script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
 </head>
@@ -21,19 +21,19 @@
 			<div class="collapse navbar-collapse" id="navtarget">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a href="#" class="nav-link">Dashboard</a>
+						<a href="../index.html" class="nav-link">Dashboard</a>
 					</li>
 				
 					<li class="nav-item">
-						<a href="#" class="nav-link">Posts</a>
+						<a href="../posts/index.html" class="nav-link">Posts</a>
 					</li>
 				
 					<li class="nav-item">
-						<a href="#" class="nav-link">Categories</a>
+						<a href="../categories/index.html" class="nav-link">Categories</a>
 					</li>
 				
 					<li class="nav-item">
-						<a href="#" class="nav-link">Utilisateurs</a>
+						<a href="../categorie/index.html" class="nav-link">Utilisateurs</a>
 					</li>
 				</ul>
 
@@ -42,7 +42,7 @@
 						<a href="#" class="nav-link dropdown-toggle" id="dropdrownmenu" data-toggle="dropdown"><i class="fas fa-user"></i>Bienvenue Omar</a>
 						<div class="dropdown-menu">
 							<a class="dropdown-item" href="../profile/index.html"><i class="fas fa-user-circle"></i>Profile</a>
-				    		<a class="dropdown-item" href="../parametre/index.html"><i class="fas fa-cog"></i>Parametres</a>
+				    		<a class="dropdown-item" href="#"><i class="fas fa-cog"></i>Parametres</a>
 						</div>
 					</li>
 				
@@ -57,7 +57,7 @@
 
 
 		<div class="pt-5 important mt-2 bg-primary p-2">
-			<div class="container">
+			<div class="container text-white">
 				<h1 class="warn"><i class="fas fa-cog"></i>Dashboard</h1>
 			</div>
 		</div>
@@ -66,18 +66,17 @@
 			<div class="container p-2">
 
 				<div class="row mr-3">
-					<div class="col-md-3 col-sm-12">
+					<div class="col-3">
 						<button type="button" class="btn btn-basic w-100"><i class="fas fa-arrow-left pr-1"></i><a href="../index.html">Back To Dashboard</a></button>
 					</div>
 					
-					<div class="col-md-3 col-sm-12 w-100"></div>
+					<div class="col-3 w-100"></div>
 
-					<div class="col-md-3 col-sm-12">
-						<button type="button" class="btn btn-success w-100"><i class="fas fa-check text-white pr-1"></i>Save Changes</button>
+					<div class="col-3">
 					</div>
 
-					<div class="col-md-3 col-sm-12">
-						<button type="button" class="btn btn-danger w-100"><i class="fas fa-times pr-1"></i>Delete Post</button>
+					<div class="col-3">
+						<button type="button" class="btn btn-success w-100"><i class="fas fa-check pr-1"></i>Save Changes</button>
 					</div>
 					
 				</div>
@@ -85,50 +84,43 @@
 			</div>
 		</div>
 
-		<div class="container pb-4">
+		<div class="container p-4">
 			<div class="card">
-			<div class="card-header">
-				<h4>Edit Post</h4>
+				<div class="card-header">
+					<h4>Edit Settings</h4>
+				</div>
+				<div class="card-body">
+					<h3 class="font-weight-light">Allow User Registrations</h3>
+
+					<div class="form-check">
+						<input type="radio" class="form-check-input" name="allow" id="allow">
+						<label for="allow">Yes</label>
+					</div>
+					
+					<div class="form-check">
+						<input type="radio" class="form-check-input" name="allow" id="allow">
+						<label for="allow">No</label>
+					</div>
+
+					<h3 class="font-weight-light pt-4">Homepage Format</h3>
+
+					<div class="form-check">
+						<input type="radio" class="form-check-input" name="lowa" id="lowa">
+						<label for="lowa">Post Index</label>
+					</div>
+					
+					<div class="form-check">
+						<input type="radio" class="form-check-input" name="lowa" id="lowa">
+						<label for="lowa">Single Page</label>
+					</div>
+
+				</div>
 			</div>
-			  <div class="card-body">
-
-					<form action="post">
-						<div class="form-group">
-							<label for="title">Title</label>
-							<input type="name" class="form-control" id="Title">
-						</div>
-						<div class="form-group">
-							<label for="category">Category</label>
-							<select class="form-control" name="category" id="category">
-								<option>Web Development</option>
-								<option>Tech Gadgets</option>
-								<option>Business</option>
-								<option>Health & Wellness</option>
-							</select>
-						</div>
-					</form>
-
-					<div>
-						<p>Image Upload</p>
-						<input type="file" name="file">
-						<div class="small">Max Size 3mb</div>
-					</div>
-
-					<div class="pt-2">
-						<p>Body</p>
-						<textarea name="editor1"></textarea>
-			              <script>
-			                    CKEDITOR.replace( 'editor1' );
-			              </script>
-					</div>
-		       			
-		      </div>
-		    </div>
 		</div>
 
-		<footer class="bg-dark p-4">
+		<footer class="bg-dark p-5">
 			<div class="text-center text-white">
-				<p>copyright &copy 2020 Adminboard</p>
+				<p>Copyright &copy 2020 Adminboard</p>
 			</div>
 		</footer>
 
